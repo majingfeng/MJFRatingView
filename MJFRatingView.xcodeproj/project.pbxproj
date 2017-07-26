@@ -13,6 +13,11 @@
 		636C7B031F282520006782CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B011F282520006782CB /* Main.storyboard */; };
 		636C7B051F282520006782CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B041F282520006782CB /* Assets.xcassets */; };
 		636C7B081F282520006782CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B061F282520006782CB /* LaunchScreen.storyboard */; };
+		636C7B141F2825E8006782CB /* 星星1.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B101F2825E8006782CB /* 星星1.png */; };
+		636C7B151F2825E8006782CB /* 星星1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B111F2825E8006782CB /* 星星1@2x.png */; };
+		636C7B161F2825E8006782CB /* 星星2.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B121F2825E8006782CB /* 星星2.png */; };
+		636C7B171F2825E8006782CB /* 星星2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 636C7B131F2825E8006782CB /* 星星2@2x.png */; };
+		636C7B1A1F282604006782CB /* MJFRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 636C7B191F282604006782CB /* MJFRatingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,12 @@
 		636C7B041F282520006782CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636C7B071F282520006782CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636C7B091F282520006782CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		636C7B101F2825E8006782CB /* 星星1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星星1.png"; sourceTree = "<group>"; };
+		636C7B111F2825E8006782CB /* 星星1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星星1@2x.png"; sourceTree = "<group>"; };
+		636C7B121F2825E8006782CB /* 星星2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星星2.png"; sourceTree = "<group>"; };
+		636C7B131F2825E8006782CB /* 星星2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "星星2@2x.png"; sourceTree = "<group>"; };
+		636C7B181F282604006782CB /* MJFRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFRatingView.h; sourceTree = "<group>"; };
+		636C7B191F282604006782CB /* MJFRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFRatingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,7 @@
 		636C7AF71F282520006782CB /* MJFRatingView */ = {
 			isa = PBXGroup;
 			children = (
+				636C7B0F1F2825E0006782CB /* MJFRating */,
 				636C7AFB1F282520006782CB /* AppDelegate.h */,
 				636C7AFC1F282520006782CB /* AppDelegate.m */,
 				636C7AFE1F282520006782CB /* ViewController.h */,
@@ -77,6 +89,19 @@
 				636C7AF91F282520006782CB /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		636C7B0F1F2825E0006782CB /* MJFRating */ = {
+			isa = PBXGroup;
+			children = (
+				636C7B101F2825E8006782CB /* 星星1.png */,
+				636C7B111F2825E8006782CB /* 星星1@2x.png */,
+				636C7B121F2825E8006782CB /* 星星2.png */,
+				636C7B131F2825E8006782CB /* 星星2@2x.png */,
+				636C7B181F282604006782CB /* MJFRatingView.h */,
+				636C7B191F282604006782CB /* MJFRatingView.m */,
+			);
+			path = MJFRating;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +162,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				636C7B171F2825E8006782CB /* 星星2@2x.png in Resources */,
+				636C7B161F2825E8006782CB /* 星星2.png in Resources */,
 				636C7B081F282520006782CB /* LaunchScreen.storyboard in Resources */,
+				636C7B141F2825E8006782CB /* 星星1.png in Resources */,
 				636C7B051F282520006782CB /* Assets.xcassets in Resources */,
 				636C7B031F282520006782CB /* Main.storyboard in Resources */,
+				636C7B151F2825E8006782CB /* 星星1@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +182,7 @@
 				636C7B001F282520006782CB /* ViewController.m in Sources */,
 				636C7AFD1F282520006782CB /* AppDelegate.m in Sources */,
 				636C7AFA1F282520006782CB /* main.m in Sources */,
+				636C7B1A1F282604006782CB /* MJFRatingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
